@@ -1,0 +1,510 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="hidden-bar-wrapper">
+
+<div class="page-wrapper">
+ 	
+	
+	
+	
+	<!-- Banner Section Two -->
+    <section class="banner-section-two" style="background-image:url(/static/images/background/8.jpg)">
+		<div class="auto-container">
+			
+			<!-- Content Column -->
+			<div class="content-column">
+				<div class="inner-column wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<h1>WE DELIVER ON TIME </h1>
+					<div class="text">Join the millions getting bargain deals on shipping cars, <br> furniture, freight, and more..</div>
+					
+					<!-- Banner Form -->
+					<div class="banner-form-two wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<form method="post" action="">
+							{% csrf_token %}
+                            {% include 'messages.html' %}
+							<div class="row clearfix">
+							
+								<!-- Form Group -->
+							
+								
+								<!-- Form Group -->
+								<div class="form-group col-lg-4 col-md-6 col-sm-12">
+									<input type="text" name="id" placeholder="Enter Your Track ID" required>
+								</div>
+								
+								<!-- Form Group -->
+								<div class="form-group col-lg-4 col-md-12 col-sm-12">
+									<button type="submit" class="theme-btn btn-style-three">Search Now</button>
+								</div>                                        
+								
+							</div>
+						</form>
+					</div>
+					<!-- End Banner Form -->
+					
+				</div>
+			</div>
+				
+		</div>
+	</section>
+	<!-- End Banner Section Two -->
+	
+	<!-- Featured Section -->
+	<section class="featured-section">
+		<div class="outer-container">
+			<div class="clearfix">
+				
+				<!-- Feature Block -->
+				<div class="feature-block">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon flaticon-air-freight"></span>
+						</div>
+						<h3><a href="#">Book Your Air Freight</a></h3>
+						<div class="text">100% Secure Payment System</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon flaticon-tow"></span>
+						</div>
+						<h3><a href="#">Book Your Road Freight</a></h3>
+						<div class="text">100% Secure Payment System</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon flaticon-boat"></span>
+						</div>
+						<h3><a href="#">Book Your Sea Freight</a></h3>
+						<div class="text">100% Secure Payment System</div>
+					</div>
+				</div>
+				
+				<!-- Feature Block -->
+				<div class="feature-block">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon flaticon-train-1"></span>
+						</div>
+						<h3><a href="#">Book Your Train Freight</a></h3>
+						<div class="text">100% Secure Payment System</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Featured Section -->
+	
+	<!-- Welcome Section -->
+	<section class="welcome-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Content Column -->
+				<div class="content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column wowallow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="sec-title-two sec-title">
+							<h2>Welcome <span>To Hiltexcourier</span></h2>
+							<div class="separater"></div>
+						</div>
+						<ul class="list-style-one">
+							<li><span>100% Safe Delivery</span>We have accomplished 100% safe delivery,</li>
+							<li><span>Weather Insurance</span>Any weather any where, we deliver to your commitement</li>
+							<li><span>Fast & On Time Delivery</span>Fast and timly deliver is our motto,</li>
+						</ul>
+						<a href="#" class="theme-btn btn-style-four">Read More</a>
+					</div>
+				</div>
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column wowallow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/welcome.jpg" alt=""/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Welcome Section -->
+	
+	<!-- Services Section Two -->
+	<section class="services-section-two">
+		<div class="auto-container">
+			<div class="sec-title centered">
+				<h3>Our Awesome <span> Services </span></h3>
+				<div class="separater"></div>
+			</div>
+			<div class="row clearfix">
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-1.jpg" alt="" />
+							<h4>Air Freight</h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-2.jpg" alt="" />
+							<h4>Sea Freight</h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-3.jpg" alt="" />
+							<h4>Road Freight </h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-4.jpg" alt="" />
+							<h4>Courier Services</h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-5.jpg" alt="" />
+							<h4>Fast Freight </h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="/static/images/resource/service-6.jpg" alt="" />
+							<h4>Track Cargo</h4>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section Two -->
+	
+	<!-- Counter Section -->
+	<section class="counter-section" style="background-image:url(/static/images/background/3.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Order Column -->
+				<div class="order-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column" style="background-image:url(/static/images/background/4.png)">
+						<div class="icon-box">
+							<span class="icon flaticon-fast-delivery"></span>
+						</div>
+						<h2>Track Your Order</h2>
+						<div class="text">Enter your Track Id For Instant Search</div>
+						
+						<!--Track Form-->
+						<div class="track-form">
+                            <form method="post" action="">
+								{% csrf_token %}
+                                {% include 'messages.html' %}
+                                <div class="form-group">
+                                    <input type="text" name="id"  placeholder="Tracking ID" required="">
+                                    <button type="submit" class="theme-btn"><span class="fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+						
+						<!-- Social Box -->
+						<div class="social-box">
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-linkedin"></a>
+							<a href="#" class="fa fa-google-plus"></a>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- Counter Column -->
+				<div class="counter-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+						<div class="fact-counter">
+							<div class="clearfix">
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box">
+												<span class="count-text" data-speed="2000" data-stop="60">0</span>
+											</div>
+											<h4 class="counter-title">Years Experience</h4>
+										</div>
+									</div>
+								</div>
+
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box alternate">
+												<span class="count-text" data-speed="2800" data-stop="2500">0</span>+
+											</div>
+											<h4 class="counter-title">Professional Workers</h4>
+										</div>
+									</div>
+								</div>
+
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box">
+												<span class="count-text" data-speed="2500" data-stop="80">0</span>%
+											</div>
+											<h4 class="counter-title">Areas Covered</h4>
+										</div>
+									</div>
+								</div>
+								
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box">
+												<span class="count-text" data-speed="2000" data-stop="205">0</span>+
+											</div>
+											<h4 class="counter-title">Countries Covered</h4>
+										</div>
+									</div>
+								</div>
+								
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box">
+												<span class="count-text" data-speed="2000" data-stop="180">0</span>+
+											</div>
+											<h4 class="counter-title">Corporate Clients</h4>
+										</div>
+									</div>
+								</div>
+								
+								<!--Column-->
+								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+									<div class="inner">
+										<div class="content">
+											<div class="count-outer count-box">
+												<span class="count-text" data-speed="2000" data-stop="450">0</span>+
+											</div>
+											<h4 class="counter-title">Owned Vehicles</h4>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="team-section gap">
+            <div class="auto-container">
+			<div class="sec-title centered">
+				<h3>Professional <span>Team</span></h3>
+				<div class="separater"></div>
+			</div>
+			<div class="tem-sec">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="tm-bx">
+							<div class="tm-thmb">
+								<a href="#"><img src="/static/images/clients/38.jpg" alt="Team-Image.jpg"></a>
+								<div class="tm-inf">
+									<h5><a href="#">Tim Patinson</a></h5>
+									<span class="designation">Cargo Supervisor</span>
+									<ul class="social-icon-one">
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					 <div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="tm-bx">
+							<div class="tm-thmb">
+								<a href="#"><img src="/static/images/clients/39.jpg" alt="Team-Image.jpg"></a>
+								<div class="tm-inf">
+									<h5><a href="#" title="">Jina Patinson</a></h5>
+									<span class="designation">Shipping Manager</span>
+									<ul class="social-icon-one">
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					 <div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="tm-bx">
+							<div class="tm-thmb">
+								<a href="#"><img src="/static/images/clients/40.jpg" alt="Team-Image.jpg"></a>
+								<div class="tm-inf">
+									<h5><a href="#" title="">Mark Hustler</a></h5>
+									<span class="designation">Tracking Dept</span>
+									<ul class="social-icon-one">
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="tm-bx">
+							<div class="tm-thmb">
+								<a href="#"><img src="/static/images/clients/41.jpg" alt="Team-Image.jpg"></a>
+								<div class="tm-inf">
+									<h5><a href="#" title="">John Doe</a></h5>
+									<span class="designation">IT Technician</span>
+									<ul class="social-icon-one">
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- Team Sec -->
+		</div>
+    </section>
+	
+	<!-- Price Section -->
+	<section class="price-section" style="background-image:url(/static/images/background/11.jpg)">
+		<div class="auto-container">
+			
+			<div class="sec-title-two centered light sec-title">
+				<h2>Choose Your Pricing Plan</h2>
+				<div class="separater"></div>
+			</div>
+			
+			<div class="clearfix">
+				
+				<!-- Price Block -->
+				<div class="price-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wowallow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="title">Silver</div>
+						<div class="price-box">
+							<div class="price">$50.0</div>
+							<div class="months">/KM Distance</div>
+						</div>
+						<ul class="price-list">
+							<li>1x Storage Unit</li>
+							<li>10x Weeks</li>
+							<li>Double Covered Truck</li>
+							<li>100% Insurance</li>
+							<li>Timely Delivery</li>
+						</ul>
+						<div class="btn-box">
+							<a href="#" class="theme-btn choose-btn">Choose Now</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Price Block -->
+				<div class="price-block active col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wowallow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="title">Platinum</div>
+						<div class="price-box">
+							<div class="price">$80.25</div>
+							<div class="months">/KG Package</div>
+						</div>
+						<ul class="price-list">
+							<li>Additional Single Truck</li>
+							<li>200x Weeks</li>
+							<li>Adminstrator Access</li>
+							<li>Sponsored Promotion</li>
+							<li>Premium Company Account</li>
+							<li>ID Tracking Location</li>
+						</ul>
+						<div class="btn-box">
+							<a href="#" class="theme-btn choose-btn">Choose Now</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Price Block -->
+				<div class="price-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wowallow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="title">Gold</div>
+						<div class="price-box">
+							<div class="price">$75.0</div>
+							<div class="months">/Mile Distance</div>
+						</div>
+						<ul class="price-list">
+							<li>1x Storage Unit</li>
+							<li>10x Weeks</li>
+							<li>Double Covered Truck</li>
+							<li>Sponsored Promotion</li>
+							<li>Monthly Gift Voucher</li>
+						</ul>
+						<div class="btn-box">
+							<a href="#" class="theme-btn choose-btn">Choose Now</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Price Section -->
+	
+	<!-- Testimonial Section -->
+
+	<!-- End Testimonial Section -->
+	
+
+	
+	<!--Main Footer-->
+  
+</div>
+
+
+</body>
+{% endblock content %}

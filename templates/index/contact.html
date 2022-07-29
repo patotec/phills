@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="hidden-bar-wrapper">
+
+<div class="page-wrapper">
+
+	
+	<!--Page Title-->
+    <section class="page-title" style="background-image:url(/static/images/background/12.jpg);">
+    	<div class="auto-container">
+        	<h2>Contact Us</h2>
+			<div class="separater"></div>
+        </div>
+    </section>
+    
+    <!--Breadcrumb-->
+    <div class="breadcrumb-outer">
+    	<div class="auto-container">
+        	<ul class="bread-crumb text-center">
+            	<li><a href="{% url 'indexurl:index' %}">Home</a> <span>/</span></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    <!--End Page Title-->
+	
+	<!-- Contact Section -->
+	<section class="quote-section">
+		<div class="auto-container">
+			<div class="quote-form-box contact-page">
+				<div class="sec-title centered">
+					<h3>Give Us <span>Your Feedback</span></h3>
+					<div class="separater"></div>
+					<div class="text">We Value Your Feedback Comments & Queries</div>
+				</div>
+				<!-- Form-->
+                <form method="post" action="">
+					{% csrf_token %}
+                    {% include 'messages.html' %}
+					<div class="row clearfix">
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<input type="text" name="name" placeholder="Enter Your Name" required>
+						</div>
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<input type="email" name="email" placeholder="Your Email ID" required>
+						</div>
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<input type="text" name="subject" placeholder="Your subject" required>
+						</div>
+						<div class="form-group col-lg-12 col-md-12 col-sm-12 col-lg-12">
+							<textarea placeholder="Your Message" name="message"></textarea>
+						</div>
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<button type="submit" class="theme-btn btn-style-one">Request a Quote / Give Feedback</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	
+</div>
+<!--End pagewrapper-->
+
+</body>
+
+{% endblock content %}

@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="hidden-bar-wrapper">
+
+    <div class="page-wrapper">
+         
+        
+        
+        
+        <!--Page Title-->
+        <section class="page-title" style="background-image:url(/static/images/background/12.jpg);">
+            <div class="auto-container">
+                <h2>Track & Trace</h2>
+                <div class="separater"></div>
+            </div>
+        </section>
+        
+        <!--Breadcrumb-->
+        <div class="breadcrumb-outer">
+            <div class="auto-container">
+                <ul class="bread-crumb text-center">
+                    <li><a href="{% url 'indexurl:index' %}">Home</a> <span>/</span></li>
+                    <li>Track & Trace</li>
+                </ul>
+            </div>
+        </div>
+        <!--End Page Title-->
+        
+        <!--Sidebar Page Container-->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    
+                    <!--Content Side-->
+                    <div class="content-side col-lg-9 col-md-12 col-sm-12">
+                        <div class="track-section">
+                            <!-- Sec Title Two -->
+                            <div class="sec-title-two sec-title">
+                                <h2>Track & <span>Trace Shipment</span></h2>
+                                <div class="separater"></div>
+                            </div>
+                            
+                            <!-- Quote Form Box -->
+                            
+                            <section class="quote-section">
+                                <div class="auto-container">
+                                    
+                                    <div class="quote-form-box">
+                                        
+                                        <!--Login Form-->
+                                        <form method="post" action="https://nauthemes.net/html/Hiltexcourier/contact.html">
+                                            <div class="row clearfix">
+                                                
+                                                <!-- Form Group -->
+                                               
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Name</label>
+                                                    <input type="text" value="{{data.fullname}}" placeholder="Enter Your Name" readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Email</label>
+                                                    <input type="email" value="{{data.email}}" placeholder="Your Email ID" readonly>
+                                                </div>
+                                                
+                                              
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Transport From</label>
+                                                    <input type="text" value="{{data.pickup}}"  readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Transport To</label>
+                                                    <input type="text" value="{{data.destination}}"  readonly>
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Package Type</label>
+                                                    <input type="text" value="{{data.type_shipment}}"  readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                                                    <label>Weight</label>
+                                                    <input type="text" value="{{data.weight}}"  readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                                                    <label>Length</label>
+                                                    <input type="text" value="{{data.length}}"  readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                                                    <label>Width</label>
+                                                    <input type="text" value="{{data.width}}"  readonly>
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Tracking ID</label>
+                                                    <input type="text" value="{{data.track_id}}"  readonly>
+                                                </div>
+                                                
+                                                <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                                    <label>Date</label>
+                                                    <input type="text" value="{{data.date_at}}"  readonly>
+                                                </div>
+                                                
+                                             
+                                             
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <h1>STATUS:{{data.status}}</h1>
+                            </section>
+                            <!-- Track Form -->
+                          
+                            
+                            <!-- Tracking Info -->
+                            <div class="tracking-info-detail">
+                            {% if data.Delivered %}
+                                <div class="tracking-box">
+                                    <div class="tracking-time-box">
+                                        <div class="tracking-time">{{data.date_at}}</div>
+                                       
+                                    </div>
+                                    <div class="tracking-location">
+                                        <strong>Picked up in {{data.pickup}} </strong>
+                                        Hiltexcourier Office Near 10-G Location South
+                                    </div>
+                                </div>
+                                
+                                <div class="tracking-box">
+                                    <div class="tracking-location style-two">
+                                        <strong>Out For Delivery </strong>
+                                        Union WareHouse 5th Avenue Block
+                                    </div>
+                                </div>
+                                
+                                <div class="tracking-box">
+                                   
+                                    <div class="tracking-location style-three">
+                                        <span class="dott"></span>
+                                        <strong>Arrive at Post Office</strong>
+                                      
+                                    </div>
+                                </div>
+                                
+                                <div class="tracking-box">
+                                   
+                                    <div class="tracking-location style-three">
+                                        <span class="dott"></span>
+                                        <strong>Departed Shipping Facility</strong>
+                                        Hiltexcourier Office Departure Location Road
+                                    </div>
+                                </div>
+                                
+                                <div class="tracking-box">
+                                   
+                                    <div class="tracking-location style-three">
+                                        <span class="dott"></span>
+                                        <strong>Picked up by Shipping Partner </strong>
+                                        {{data.destination}}
+                                    </div>
+                                </div>
+                              {% else %}
+                              <div class="tracking-box">
+                                <div class="tracking-time-box">
+                                    <div class="tracking-time">{{data.date_at}}</div>
+                                   
+                                </div>
+                                <div class="tracking-location">
+                                    <strong>Picked up in {{data.pickup}} </strong>
+                                    Hiltexcourier Office Near 10-G Location South
+                                </div>
+                            </div>
+                            
+                            <div class="tracking-box">
+                                <div class="tracking-location style-two">
+                                    <strong>Out For Delivery </strong>
+                                    Union WareHouse 5th Avenue Block
+                                </div>
+                            </div>
+                            {% endif %}
+                                
+                            </div>
+                            
+                            <!--Map Outer-->
+                          
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Sidebar Side-->
+                  
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!--End pagewrapper-->
+    
+    
+    </body>
+{% endblock content %}

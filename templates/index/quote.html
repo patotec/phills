@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body class="hidden-bar-wrapper">
+
+<div class="page-wrapper">
+ 	
+   
+	<!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/12.jpg);">
+    	<div class="auto-container">
+        	<h2>Quote Request</h2>
+			<div class="separater"></div>
+        </div>
+    </section>
+    
+    <!--Breadcrumb-->
+    <div class="breadcrumb-outer">
+    	<div class="auto-container">
+        	<ul class="bread-crumb text-center">
+            	<li><a href="index-2.html">Home</a> <span>/</span></li>
+                <li>Request a Quote</li>
+            </ul>
+        </div>
+    </div>
+    <!--End Page Title-->
+	
+	<!-- Quote Section -->
+	<section class="quote-section">
+		<div class="auto-container">
+			
+			<div class="quote-form-box">
+				
+				<!--Login Form-->
+                <form method="post" action="">
+					{% csrf_token %}
+                    {% include 'messages.html' %}
+					<div class="row clearfix">
+						
+						<!-- Form Group -->
+						<!-- <div class="form-group option-box col-lg-12 col-md-12 col-sm-12">
+							<div class="radio-box">
+								<input type="radio" name="gender" id="male">&nbsp; 
+								<label for="male">Ocean Freight</label>
+							</div>
+							<div class="radio-box">
+								<input type="radio" name="gender" id="female">&nbsp; 
+								<label for="female">Air Freight</label>
+							</div>
+							<div class="radio-box">
+								<input type="radio" name="gender" id="other">&nbsp; 
+								<label for="other">Raod Freight</label>
+							</div>
+						</div> -->
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Name</label>
+							<input type="text" name="name" placeholder="Enter Your Name" required>
+						</div>
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Your Email ID" required>
+						</div>
+						
+					
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Transport From</label>
+							<input type="text" name="pickup" placeholder="From" required>
+						
+						</div>
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Transport To</label>
+							<input type="text" name="destination" placeholder="To" required>
+						</div>
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Date</label>
+							<input type="datetime-local" name="date" placeholder="date" required>
+						</div>
+						
+						
+						<div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Package Type</label>
+							<select class="custom-select-box" name="type">
+								<option>Parcel</option>
+								<option>Cargo</option>
+								<option>Shipment</option>
+							</select>
+						</div>
+						
+						<div class="form-group col-lg-2 col-md-6 col-sm-12">
+							<label>Weight</label>
+							<select class="custom-select-box" name="weight">
+								<option>0KG - 10KG+</option>
+								<option>11KG - 100KG+</option>
+								<option>101KG - 1000KG+</option>
+								<option>More than 1000KG+</option>
+							</select>
+						</div>
+						
+						<div class="form-group col-lg-2 col-md-6 col-sm-12">
+							<label>Length</label>
+							<select class="custom-select-box" name="length">
+								<option>Normal Range</option>
+								<option>Medium Range</option>
+								<option>Extended Range</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-2 col-md-6 col-sm-12">
+							<label>Height</label>
+							<select class="custom-select-box" name="height">
+								<option>Normal Range</option>
+								<option>Medium Range</option>
+								<option>Extended Range</option>
+							</select>
+						</div>
+						
+						<div class="form-group col-lg-2 col-md-6 col-sm-12">
+							<label>Width</label>
+							<select class="custom-select-box" name="width">
+								<option>Normal Range</option>
+								<option>Medium Range</option>
+								<option>Extended Range</option>
+							</select>
+						</div>	
+						<!-- <div class="form-group col-lg-4 col-md-6 col-sm-12">
+							<label>Assessed Value</label>
+							<input type="text" name="price" placeholder="In Dollars (USD)" required>
+						</div> -->
+						
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<button type="submit" class="theme-btn btn-style-one">Request a Quote</button>
+						</div>
+						
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Quote Section -->
+	
+	<!-- Counter Section -->
+	
+
+</div>
+<!--End pagewrapper-->
+
+</body>
+{% endblock content %}
