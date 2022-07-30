@@ -132,12 +132,12 @@
                                        
                                     </div>
                                     <div class="tracking-location">
-                                        <strong>Picked up in {{data.pickup}} </strong>
-                                        Hiltexcourier Office Near 10-G Location South
+                                        <strong>On Hold at</strong>
+                                     {{data.curent_location}}
                                     </div>
                                 </div>
                                 
-                                <div class="tracking-box">
+                                <!-- <div class="tracking-box">
                                     <div class="tracking-location style-two">
                                         <strong>Out For Delivery </strong>
                                         Union WareHouse 5th Avenue Block
@@ -169,7 +169,7 @@
                                         <strong>Picked up by Shipping Partner </strong>
                                         {{data.destination}}
                                     </div>
-                                </div>
+                                </div> -->
                               {% else %}
                               <div class="tracking-box">
                                 <div class="tracking-time-box">
@@ -184,7 +184,7 @@
                             
                             <div class="tracking-box">
                                 <div class="tracking-location style-two">
-                                    <strong>Out For Delivery </strong>
+                                    <strong>In Transit </strong>
                                     Union WareHouse 5th Avenue Block
                                 </div>
                             </div>
