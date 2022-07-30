@@ -1,1 +1,1 @@
-web: gunicorn logisjs.wsgi
+web: gunicorn phills.wsgi
