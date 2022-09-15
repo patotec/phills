@@ -25,7 +25,7 @@ SECRET_KEY = 's@x98=qh4_71+niq=69+c0k_k%0t-t371a#+_*y*yqfn_u&m1g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com','*']
+ALLOWED_HOSTS = ['*']
 
 EMAIL_HOST = 'mail.privateemail.com'
 EMAIL_HOST_USER = 'support@hiltexcourier.com'
