@@ -28,10 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 EMAIL_HOST = 'mail.privateemail.com'
-EMAIL_HOST_USER = 'support@hiltexcourier.com'
+EMAIL_HOST_USER = 'support@hiltexcourier.net'
 EMAIL_HOST_PASSWORD = 'aaasssaaa'
-DEFAULT_FROM_EMAIL = 'support@hiltexcourier.com'
-SERVER_EMAIL = 'support@hiltexcourier.com'
+DEFAULT_FROM_EMAIL = 'support@hiltexcourier.net'
+SERVER_EMAIL = 'support@hiltexcourier.net'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 
